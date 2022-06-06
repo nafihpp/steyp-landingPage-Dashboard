@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="Group_42518" data-name="Group 42518" transform="translate(-271 -6243)">
+    <g id="Group_42514" data-name="Group 42514" transform="translate(119 4991)">
+      <rect id="Rectangle_14743" data-name="Rectangle 14743" width="53" height="53" rx="6" transform="translate(152 1252)" fill="#fff5e0"/>
+    </g>
+    <path id="tick-inside-circle_1" data-name="tick-inside-circle 1" d="M7.924,10.878l-1.88,1.88L12.087,18.8l13.43-13.43-1.88-1.88-11.55,11.55Zm16.25,2.552A10.744,10.744,0,1,1,13.43,2.686a10.473,10.473,0,0,1,2.955.4L18.533.94A16.345,16.345,0,0,0,13.43,0a13.43,13.43,0,1,0,13.43,13.43Z" transform="translate(284 6256)" fill="#ffab00"/>
+  </g>
+</svg>
