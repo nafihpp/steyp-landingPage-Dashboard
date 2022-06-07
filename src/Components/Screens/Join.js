@@ -9,7 +9,9 @@ function Join() {
             <Img src={require("../../assets/who-can-banner.png")} />
           </DivLeft>
           <DivRight>
-            <Headline>Who can join in <Greenspan>Steyp?</Greenspan></Headline>
+            <Headline>
+              Who can join in <Greenspan>Steyp?</Greenspan>
+            </Headline>
             <Div>
               <Span>
                 <Img src={require("../../assets/top-tick.svg").default} />
@@ -32,7 +34,10 @@ function Join() {
               <Span>
                 <Img src={require("../../assets/bottom-tick.svg").default} />
               </Span>
-              <Para>Students who has a laptop or a desktop for day to day studies and practice</Para>
+              <Para>
+                Students who has a laptop or a desktop for day to day studies
+                and practice
+              </Para>
             </Div>
           </DivRight>
         </DivMain>
@@ -41,9 +46,9 @@ function Join() {
   );
 }
 const Greenspan = styled.span`
-    color: rgb(14, 159, 106);
-    font-family: "gorditamedium";
-`
+  color: rgb(14, 159, 106);
+  font-family: "gorditamedium";
+`;
 const Para = styled.p`
   font-size: 16px;
   font-family: "gorditamedium";
@@ -61,7 +66,7 @@ const Span = styled.span`
   margin-right: 20px;
 `;
 const SectionMain = styled.section`
-  background: #e5e5e5;
+  background: rgb(249, 249, 249);
   padding: 100px 0;
 `;
 const DivWrap = styled.div`
@@ -84,7 +89,7 @@ const DivRight = styled.div`
   padding-top: 106px;
 `;
 const Headline = styled.h1`
-    margin-bottom: 20px;
-    font-size: 34px;
+  margin-bottom: 20px;
+  font-size: 34px;
 `;
 export default Join;

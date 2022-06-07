@@ -8,7 +8,8 @@ function Engineer() {
         <DivMain>
           <DivLeft>
             <Headline>
-              <GreenSpan>40%</GreenSpan> of students from a classroom opts for Engineering
+              <GreenSpan>40%</GreenSpan> of students from a classroom opts for
+              Engineering
             </Headline>
             <Paraone>
               A large number of students opts for Engineering because of various
@@ -22,7 +23,14 @@ function Engineer() {
               Here is where Steyp comes in, to check the eligibility of
               students, that whether a student is fit for Engineering or not.
             </Paratwo>
-            <Button>Apply for SAT</Button>
+            <Button>
+              Apply for SAT{" "}
+              <SpanLogo className="Spanned">
+                <Imagehov
+                  src={require("../../assets/right-side.svg").default}
+                />
+              </SpanLogo>
+            </Button>
           </DivLeft>
           <DivRight>
             <RightImg src={require("../../assets/side-image.png")} />
@@ -32,9 +40,11 @@ function Engineer() {
     </Mainsec>
   );
 }
+const SpanLogo = styled.span``;
+const Imagehov = styled.img``;
 const GreenSpan = styled.span`
-    color: rgb(15, 167, 111);
-`
+  color: rgb(15, 167, 111);
+`;
 const Mainsec = styled.section`
   padding: 100px 0;
 `;

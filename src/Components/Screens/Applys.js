@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Right from "../../assets/restricted-background.png";
+import Line from "../../assets/line.svg";
 function Applys() {
   return (
     <MainSection>
@@ -8,14 +9,35 @@ function Applys() {
         <MainDiv>
           <Headline>
             <Span>Steyp</Span> is exclusively available for <br />
-            students from Kerala
+            students from <Spann>Kerala</Spann>
           </Headline>
-          <Button>Apply for SAT</Button>
+          <Button>
+            Apply for SAT
+            <Spanned className="spanned">
+              <ImgSpan src={require("../../assets/right-side.svg").default} />
+            </Spanned>
+          </Button>
         </MainDiv>
       </Wrapper>
     </MainSection>
   );
 }
+const Spanned = styled.span``;
+const Spann = styled.span`
+  position: relative;
+  ::after {
+    content: "";
+    display: block;
+    width: 126px;
+    height: 150px;
+    background: url(${Line}) 0% 0% / contain no-repeat;
+    position: absolute;
+    right: -24px;
+    left: -9px;
+    top: 41px;
+  }
+`;
+const ImgSpan = styled.img``;
 const Button = styled.a`
   cursor: pointer;
   width: 200px;

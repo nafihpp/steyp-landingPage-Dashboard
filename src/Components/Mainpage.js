@@ -8,13 +8,20 @@ import Join from "./Screens/Join";
 import Eligiblity from "./Screens/Eligiblity";
 import Selection from "./Screens/Selection";
 import Applys from "./Screens/Applys";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 import Testimonial from "./Screens/Testimonial";
+import Foot from "./Includes/Foot";
 function Mainpage() {
   return (
     <>
       <Helmet>
         <title>Steyp | An Edtech company for Students</title>
+        <link
+          rel="icon"
+          type="image/png"
+          href={require("../assets/index.png")}
+          sizes="16x16"
+        />
       </Helmet>
       <Navbar />
       <Spotlight />
@@ -26,8 +33,8 @@ function Mainpage() {
       <Selection />
       <Applys />
       <Testimonial />
+      <Foot />
     </>
   );
 }
-
 export default Mainpage;

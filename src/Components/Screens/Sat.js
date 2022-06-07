@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Right from "../../assets/restricted-background.png"
+import Right from "../../assets/restricted-background.png";
 function Sat() {
   return (
     <MainSection>
@@ -13,12 +13,29 @@ function Sat() {
             Steyp’s Engineering program is only for students who qualifies SAT
             (Steyp’s Aptitude Test)
           </Para>
-          <Button>Apply for SAT</Button>
+          <DivButton>
+            <Button>
+              Apply for SAT{" "}
+              <SpanLogo className="Spanned">
+                <Imagehov
+                  src={require("../../assets/right-side.svg").default}
+                />
+              </SpanLogo>
+            </Button>
+          </DivButton>
         </MainDiv>
       </Wrapper>
     </MainSection>
   );
 }
+const DivButton = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+const SpanLogo = styled.span`
+  margin-left: 5px;
+`;
+const Imagehov = styled.img``;
 const Button = styled.a`
   cursor: pointer;
   padding: 15px 14px;
@@ -45,22 +62,20 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 const MainDiv = styled.div`
-  background: url(${Right})
-    149% 21% / 36% no-repeat rgb(40 35 35);
+  background: url(${Right}) 149% 21% / 36% no-repeat rgb(40 35 35);
   background-size: contain;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
   padding: 98px 0;
 `;
 const Headline = styled.h1`
   margin-bottom: 18px;
+  text-align: center;
 `;
 const Para = styled.p`
   margin-bottom: 23px;
+  text-align: center;
 `;
 const Span = styled.span`
   color: rgb(78, 175, 124);

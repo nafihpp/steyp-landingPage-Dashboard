@@ -5,7 +5,9 @@ function Eligiblity() {
   return (
     <MainSection>
       <SectionWrap>
-        <Headline>Why are we <br /> checking your <Greenspan>ELIGIBILITY?</Greenspan></Headline>
+        <Headline>
+          Why are we <br /> checking your <Greenspan>ELIGIBILITY?</Greenspan>
+        </Headline>
         <MainDiv>
           <DivLeft>
             <Div>
@@ -57,7 +59,14 @@ function Eligiblity() {
                 </Par>
               </DivContent>
             </Div>
-            <Button>Apply for SAT</Button>
+            <Button>
+              Apply for SAT{" "}
+              <SpanLogo className="Spanned">
+                <Imagehov
+                  src={require("../../assets/right-side.svg").default}
+                />
+              </SpanLogo>
+            </Button>
           </DivLeft>
           <DivRight>
             <Image src={require("../../assets/techie-club.png")} />
@@ -67,15 +76,17 @@ function Eligiblity() {
     </MainSection>
   );
 }
+const SpanLogo = styled.span``;
+const Imagehov = styled.img``;
 const Greenspan = styled.span`
-    color: rgb(78, 175, 124);
-    font-family: "gorditamedium";
-`
+  color: rgb(78, 175, 124);
+  font-family: "gorditamedium";
+`;
 const Headline = styled.h1`
-    margin-bottom: 40px;
-    font-family: "gorditamedium";
-    font-size: 34px;
-    font-weight: 400;
+  margin-bottom: 40px;
+  font-family: "gorditamedium";
+  font-size: 34px;
+  font-weight: 400;
 `;
 const DivContent = styled.div``;
 const MainSection = styled.section`
@@ -100,18 +111,23 @@ const Image = styled.img`
   width: 100%;
 `;
 const Button = styled.a`
-    cursor: pointer;
-    width: 200px;
-    padding: 15px 14px;
-    background: linear-gradient(100deg, rgb(15, 167, 111) 0%, rgb(15, 158, 167) 100%) 0% 0% no-repeat padding-box padding-box transparent;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-family: "gorditamedium";
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    justify-content: center;
-    margin-left: 67px;
+  cursor: pointer;
+  width: 200px;
+  padding: 15px 14px;
+  background: linear-gradient(
+      100deg,
+      rgb(15, 167, 111) 0%,
+      rgb(15, 158, 167) 100%
+    )
+    0% 0% no-repeat padding-box padding-box transparent;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-family: "gorditamedium";
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  margin-left: 67px;
 `;
 const Par = styled.p``;
 const Head = styled.h3`

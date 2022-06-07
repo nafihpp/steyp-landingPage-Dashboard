@@ -57,7 +57,7 @@ const DivLeft = styled.div`
 `;
 const Headline = styled.h1`
   font-size: 44px;
-  font-family: gordita_medium;
+  font-family: "gorditamedium";
   color: rgb(33, 33, 33);
   margin-bottom: 36px;
   font-weight: 400;
@@ -82,7 +82,7 @@ const ButtonDiv = styled.div`
   font-size: 16px;
   color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   border-radius: 5px;
   &:hover .Spanned {
@@ -91,8 +91,12 @@ const ButtonDiv = styled.div`
 `;
 const SpanLogo = styled.span`
   display: none;
+  margin-left: 5px;
 `;
-const Imagehov = styled.img``;
+const Imagehov = styled.img`
+  width: 100%;
+  display: block;
+`;
 const DivRight = styled.div``;
 const DivMammo = styled.div`
   position: absolute;

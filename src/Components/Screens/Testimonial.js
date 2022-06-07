@@ -9,14 +9,14 @@ function Testimonial() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
+    rows: 2,
+    slidesPerRow: 2,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -25,16 +25,16 @@ function Testimonial() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -46,38 +46,162 @@ function Testimonial() {
           What our students say about the <br /> experience in{" "}
           <GreenSpan>Steyp</GreenSpan>
         </Headline>
-        <MainDiv>
-          <Sliders {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-            <div>
-              <h3>7</h3>
-            </div>
-          </Sliders>
-        </MainDiv>
-        <Button></Button>
+        <Sliders {...settings}>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/zanil.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Zanil uthakan</H3>
+                <P>Kvhhs kannur</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/person-min.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Wazeer Steyp</H3>
+                <P>Kvups kannur</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img
+                  src={require("../../assets/Muhammed_Saheerk_jtOOWA8.jpg")}
+                />
+              </ImgContainer>
+              <DivContents>
+                <H3>Saheer Khan</H3>
+                <P>Jamia Malappuram</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/zanil.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Zanil uthakan</H3>
+                <P>Kvups kannur</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/zanil.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Zanil uthakan</H3>
+                <P>Steyp Trivandrum</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/person-min.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Wazeer Steyp</H3>
+                <P>Kvups kannur</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img
+                  src={require("../../assets/Muhammed_Saheerk_jtOOWA8.jpg")}
+                />
+              </ImgContainer>
+              <DivContents>
+                <H3>Saheer Khan</H3>
+                <P>Jamia Malappuram</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+            </DivMainer>
+          </Div>
+          <Div>
+            <DivMainer>
+              <ImgContainer>
+                <Img src={require("../../assets/zanil.jpg")} />
+              </ImgContainer>
+              <DivContents>
+                <H3>Zanil uthakan</H3>
+                <P>Kvups kannur</P>
+                <P>Before Joining steyp</P>
+              </DivContents>
+              <DivButton>
+                <ButtonLinkedin></ButtonLinkedin>
+              </DivButton>
+            </DivMainer>
+          </Div>
+        </Sliders>
+        <Button>Apply for SAT</Button>
       </Wrapper>
     </Mainsection>
   );
 }
-const Sliders = styled(Slider)``
-const Div = styled.div``;
+const DivMainer = styled.div`
+  display: flex !important;
+`;
+const ButtonLinkedin = styled.a``;
+const DivButton = styled.div``;
+const DivContents = styled.div``;
+const H3 = styled.h3``;
+const P = styled.p``;
+const Img = styled.img`
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+`;
+const ImgContainer = styled.div`
+  width: 22%;
+  margin-right: 15px;
+`;
+const Sliders = styled(Slider)`
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+`;
+const Div = styled.div`
+  padding: 20px;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 45% !important;
+  margin: 0 10px 10px 0;
+`;
 const GreenSpan = styled.span`
   color: rgb(15, 167, 111);
   font-family: "gorditamedium";
@@ -86,15 +210,34 @@ const Mainsection = styled.section`
   padding: 100px 0;
 `;
 const Wrapper = styled.div`
-    width: 90%;
-    margin:0 auto;
+  width: 90%;
+  margin: 0 auto;
 `;
 const Headline = styled.h1`
   text-align: center;
   font-family: "gorditamedium";
   font-weight: 100;
   font-size: 35px;
+  margin-bottom: 30px;
 `;
-const MainDiv = styled.div``;
-const Button = styled.a``;
+const Button = styled.a`
+  margin: 35px auto 0px;
+  cursor: pointer;
+  width: 200px;
+  padding: 15px 14px;
+  background: linear-gradient(
+      100deg,
+      rgb(15, 167, 111) 0%,
+      rgb(15, 158, 167) 100%
+    )
+    0% 0% no-repeat padding-box padding-box transparent;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-family: "gorditamedium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.4s ease 0s;
+`;
 export default Testimonial;
