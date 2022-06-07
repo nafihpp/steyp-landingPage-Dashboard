@@ -22,7 +22,9 @@ function Applys() {
     </MainSection>
   );
 }
-const Spanned = styled.span``;
+const Spanned = styled.span`
+  margin-left: 8px;
+`;
 const Spann = styled.span`
   position: relative;
   ::after {
@@ -52,7 +54,7 @@ const Button = styled.a`
   color: rgb(255, 255, 255);
   font-family: "gorditamedium";
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   border-radius: 5px;
 `;

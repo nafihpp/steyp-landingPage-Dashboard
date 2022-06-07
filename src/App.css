@@ -14,8 +14,7 @@
 .App {
   text-align: center;
 }
-.slick-dots li.slick-active button:before {
-  opacity: .75;
+.slick-dots li button{
   color: #d40000;
 }
 .App-logo {

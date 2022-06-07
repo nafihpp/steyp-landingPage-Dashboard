@@ -76,7 +76,9 @@ function Eligiblity() {
     </MainSection>
   );
 }
-const SpanLogo = styled.span``;
+const SpanLogo = styled.span`
+  margin-left: 8px;
+`;
 const Imagehov = styled.img``;
 const Greenspan = styled.span`
   color: rgb(78, 175, 124);
@@ -124,7 +126,7 @@ const Button = styled.a`
   color: rgb(255, 255, 255);
   font-family: "gorditamedium";
   display: flex;
-  align-items: center;
+  align-items: start;
   border-radius: 5px;
   justify-content: center;
   margin-left: 67px;

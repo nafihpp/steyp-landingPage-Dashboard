@@ -62,7 +62,9 @@ function Selection() {
     </MainSection>
   );
 }
-const SpanLogo = styled.span``;
+const SpanLogo = styled.span`
+  margin-left: 8px;
+`;
 const Imagehov = styled.img``;
 const Greenspan = styled.span`
   color: rgb(15, 167, 111);
@@ -108,7 +110,7 @@ const Button = styled.a`
   color: rgb(255, 255, 255);
   font-family: "gorditamedium";
   display: flex;
-  align-items: center;
+  align-items: start;
   border-radius: 5px;
   justify-content: center;
 `;
@@ -135,7 +137,10 @@ const DivTwo = styled.div`
   justify-content: space-between;
 `;
 const ImageContainer = styled.div``;
-const Img = styled.img``;
+const Img = styled.img`
+  display: block;
+  width: 100%;
+`;
 const DivContent = styled.div``;
 const H3 = styled.h3``;
 const Para = styled.p``;

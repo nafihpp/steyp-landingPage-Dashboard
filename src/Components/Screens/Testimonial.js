@@ -189,7 +189,7 @@ const Para = styled.p`
   }
 `;
 const SpanLogo = styled.span`
-  margin-left: 5px;
+  margin-left: 8px;
 `;
 const Imagehov = styled.img``;
 const DivMainer = styled.div`
@@ -257,7 +257,7 @@ const Button = styled.a`
   font-family: "gorditamedium";
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   border-radius: 5px;
   transition: all 0.4s ease 0s;
 `;

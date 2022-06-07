@@ -11,6 +11,7 @@ import Applys from "./Screens/Applys";
 import Helmet from "react-helmet";
 import Testimonial from "./Screens/Testimonial";
 import Foot from "./Includes/Foot";
+import Favicon from "../assets/index.png"
 function Mainpage() {
   return (
     <>
@@ -19,7 +20,7 @@ function Mainpage() {
         <link
           rel="icon"
           type="image/png"
-          href={require("../assets/index.png")}
+          href={Favicon}
           sizes="16x16"
         />
       </Helmet>

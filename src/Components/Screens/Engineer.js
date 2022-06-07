@@ -40,7 +40,9 @@ function Engineer() {
     </Mainsec>
   );
 }
-const SpanLogo = styled.span``;
+const SpanLogo = styled.span`
+  margin-left: 8px;
+`;
 const Imagehov = styled.img``;
 const GreenSpan = styled.span`
   color: rgb(15, 167, 111);
@@ -90,7 +92,7 @@ const Button = styled.a`
   font-family: gordita_medium;
   display: flex;
   font-family: "gorditamedium";
-  align-items: center;
+  align-items: start;
   justify-content: center;
   border-radius: 5px;
   transition: all 0.4s ease 0s;

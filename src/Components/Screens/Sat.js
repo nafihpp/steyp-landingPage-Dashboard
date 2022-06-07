@@ -33,7 +33,7 @@ const DivButton = styled.div`
   justify-content: center;
 `;
 const SpanLogo = styled.span`
-  margin-left: 5px;
+  margin-left: 8px;
 `;
 const Imagehov = styled.img``;
 const Button = styled.a`
@@ -49,7 +49,7 @@ const Button = styled.a`
   color: rgb(255, 255, 255);
   font-family: "gorditamedium";
   display: flex;
-  align-items: center;
+  align-items: start;
   border-radius: 5px;
   width: 200px;
   justify-content: center;
