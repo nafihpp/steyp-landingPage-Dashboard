@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Right from "../../assets/restricted-background.png";
+import { Link } from "react-router-dom";
 function Sat() {
   return (
     <MainSection>
@@ -14,7 +15,7 @@ function Sat() {
             (Steyp’s Aptitude Test)
           </Para>
           <DivButton>
-            <Button>
+            <Button to="/">
               Apply for SAT{" "}
               <SpanLogo className="Spanned">
                 <Imagehov
@@ -38,7 +39,8 @@ const SpanLogo = styled.span`
   display: none;
 `;
 const Imagehov = styled.img``;
-const Button = styled.a`
+const Button = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
   padding: 15px 14px;
   background: linear-gradient(
@@ -53,10 +55,14 @@ const Button = styled.a`
   display: flex;
   align-items: start;
   border-radius: 5px;
-  width: 200px;
+  width: 175px;
   justify-content: center;
+  transition: 0.1s;
   &:hover .Spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const MainSection = styled.section`

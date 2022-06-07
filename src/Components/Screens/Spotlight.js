@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 function Spotlight() {
   return (
     <MainSection>
@@ -17,7 +17,7 @@ function Spotlight() {
               capable students who stands out, thinks differently, and keeps a
               spark to shine!
             </Paragraph>
-            <ButtonDiv>
+            <ButtonDiv to="">
               Explore
               <SpanLogo className="Spanned">
                 <Imagehov
@@ -39,7 +39,6 @@ function Spotlight() {
     </MainSection>
   );
 }
-
 const MainSection = styled.section`
   background: rgb(241, 250, 255);
   padding: 100px 0;
@@ -69,10 +68,11 @@ const Paragraph = styled.p`
 const Greenspan = styled.span`
   color: #0fa76f;
 `;
-const ButtonDiv = styled.div`
+const ButtonDiv = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
-  width: 170px;
   padding: 12px 14px;
+  width: 175px;
   background: linear-gradient(
       100deg,
       rgb(15, 167, 111) 0%,
@@ -85,10 +85,12 @@ const ButtonDiv = styled.div`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
+  transition: 0.10s;
   &:hover .Spanned {
     display: block;
-    width: 20%;
-    transition: width 10s;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const SpanLogo = styled.span`

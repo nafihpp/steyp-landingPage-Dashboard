@@ -99,7 +99,7 @@ const Paratwo = styled.p`
 `;
 const Button = styled.a`
   cursor: pointer;
-  width: 200px;
+  width: 165px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -114,8 +114,12 @@ const Button = styled.a`
   align-items: start;
   border-radius: 5px;
   justify-content: center;
+  transition: 0.10s;
   &:hover .Spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const DivRight = styled.div`

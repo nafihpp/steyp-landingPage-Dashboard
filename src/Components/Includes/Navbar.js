@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 function Navbar() {
   return (
     <NavbarMain>
@@ -12,8 +12,8 @@ function Navbar() {
             </HeadDiv>
           </Childone>
           <Childtwo>
-            <DashboardLink href="">Go to dashboard</DashboardLink>
-            <DivHamburg>
+            <DashboardLink to="/">Go to dashboard</DashboardLink>
+            <DivHamburg to="/">
               <HamburgImg src={require("../../assets/hamburg.svg").default} />
             </DivHamburg>
           </Childtwo>
@@ -55,7 +55,7 @@ const Childtwo = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const DashboardLink = styled.a`
+const DashboardLink = styled(Link)`
   text-decoration: none;
   font-size: 16px;
   border: 2px solid rgb(78, 175, 124);
@@ -71,7 +71,7 @@ const HamburgImg = styled.img`
   display: block;
   width: 100%;
 `;
-const DivHamburg = styled.div`
+const DivHamburg = styled(Link)`
   width: 18%;
   margin-left: 10px;
   cursor: pointer;

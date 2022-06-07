@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function Engineer() {
   return (
     <Mainsec>
@@ -23,7 +23,7 @@ function Engineer() {
               Here is where Steyp comes in, to check the eligibility of
               students, that whether a student is fit for Engineering or not.
             </Paratwo>
-            <Button>
+            <Button to="/">
               Apply for SAT{" "}
               <SpanLogo className="Spanned">
                 <Imagehov
@@ -78,9 +78,10 @@ const Paratwo = styled.p`
   margin-bottom: 20px;
   color: #545454;
 `;
-const Button = styled.a`
+const Button = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
-  width: 200px;
+  width: 165px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -90,15 +91,17 @@ const Button = styled.a`
     0% 0% no-repeat padding-box padding-box transparent;
   font-size: 15px;
   color: rgb(255, 255, 255);
-  font-family: gordita_medium;
   display: flex;
   font-family: "gorditamedium";
   align-items: start;
   justify-content: center;
   border-radius: 5px;
-  transition: all 0.4s ease 0s;
+  transition: 0.1s;
   &:hover .Spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const DivRight = styled.div`

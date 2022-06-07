@@ -223,7 +223,7 @@ const Div = styled.div`
   border: 1px solid rgb(227, 227, 227);
   border-radius: 5px;
   margin-bottom: 20px;
-  width: 45% !important;
+  width: 48% !important;
   margin: 0 10px 10px 0;
 `;
 const GreenSpan = styled.span`
@@ -247,7 +247,7 @@ const Headline = styled.h1`
 const Button = styled.a`
   margin: 35px auto 0px;
   cursor: pointer;
-  width: 200px;
+  width: 175px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -262,9 +262,12 @@ const Button = styled.a`
   justify-content: center;
   align-items: start;
   border-radius: 5px;
-  transition: all 0.4s ease 0s;
+  transition: 0.10s;
   &:hover .Spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 export default Testimonial;

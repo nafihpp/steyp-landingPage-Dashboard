@@ -115,7 +115,7 @@ const Image = styled.img`
 `;
 const Button = styled.a`
   cursor: pointer;
-  width: 200px;
+  width: 165px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -131,8 +131,12 @@ const Button = styled.a`
   border-radius: 5px;
   justify-content: center;
   margin-left: 67px;
+  transition: 0.10s;
   &:hover .Spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const Par = styled.p``;

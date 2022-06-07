@@ -43,7 +43,7 @@ const Spann = styled.span`
 const ImgSpan = styled.img``;
 const Button = styled.a`
   cursor: pointer;
-  width: 200px;
+  width: 165px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -58,8 +58,12 @@ const Button = styled.a`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
+  transition: 0.10s;
   &:hover .spanned {
     display: block;
+  }
+  &:hover {
+    width: 200px;
   }
 `;
 const MainSection = styled.section`
