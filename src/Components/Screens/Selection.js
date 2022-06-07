@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Right from "../../assets/restricted-background.png";
+import selection from "../../assets/selection-background.png";
 function Selection() {
   return (
     <MainSection>
@@ -68,7 +68,7 @@ const Greenspan = styled.span`
   color: rgb(15, 167, 111);
 `;
 const MainSection = styled.section`
-  background: url(${Right}) 125% 0% / 36% no-repeat rgb(249, 249, 249);
+  background: url(${selection}) 125% 0% / 36% no-repeat rgb(249, 249, 249);
   padding: 100px 0;
 `;
 const Sectionwrap = styled.div`

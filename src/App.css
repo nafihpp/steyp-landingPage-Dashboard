@@ -14,7 +14,10 @@
 .App {
   text-align: center;
 }
-
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #d40000;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

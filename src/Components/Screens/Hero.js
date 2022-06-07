@@ -67,5 +67,4 @@ const Span = styled.span`
 const DivRight = styled.div``;
 const DivImgRi = styled.div``;
 const ImgRight = styled.img``;
-
 export default Hero;

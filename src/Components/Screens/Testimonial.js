@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Test from "../../assets/test.svg";
 
 function Testimonial() {
   var settings = {
@@ -55,7 +56,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Zanil uthakan</H3>
                 <P>Kvhhs kannur</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
               <DivButton>
                 <ButtonLinkedin></ButtonLinkedin>
@@ -70,7 +71,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Wazeer Steyp</H3>
                 <P>Kvups kannur</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
               <DivButton>
                 <ButtonLinkedin></ButtonLinkedin>
@@ -87,7 +88,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Saheer Khan</H3>
                 <P>Jamia Malappuram</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
             </DivMainer>
           </Div>
@@ -99,7 +100,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Zanil uthakan</H3>
                 <P>Kvups kannur</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
               <DivButton>
                 <ButtonLinkedin></ButtonLinkedin>
@@ -114,7 +115,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Zanil uthakan</H3>
                 <P>Steyp Trivandrum</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
               <DivButton>
                 <ButtonLinkedin></ButtonLinkedin>
@@ -129,7 +130,7 @@ function Testimonial() {
               <DivContents>
                 <H3>Wazeer Steyp</H3>
                 <P>Kvups kannur</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
               <DivButton>
                 <ButtonLinkedin></ButtonLinkedin>
@@ -146,31 +147,51 @@ function Testimonial() {
               <DivContents>
                 <H3>Saheer Khan</H3>
                 <P>Jamia Malappuram</P>
-                <P>Before Joining steyp</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
             </DivMainer>
           </Div>
           <Div>
             <DivMainer>
               <ImgContainer>
-                <Img src={require("../../assets/zanil.jpg")} />
+                <Img
+                  src={require("../../assets/Muhammed_Saheerk_jtOOWA8.jpg")}
+                />
               </ImgContainer>
               <DivContents>
-                <H3>Zanil uthakan</H3>
-                <P>Kvups kannur</P>
-                <P>Before Joining steyp</P>
+                <H3>Saheer Khan</H3>
+                <P>Jamia Malappuram</P>
+                <Para>Before Joining steyp</Para>
               </DivContents>
-              <DivButton>
-                <ButtonLinkedin></ButtonLinkedin>
-              </DivButton>
             </DivMainer>
           </Div>
         </Sliders>
-        <Button>Apply for SAT</Button>
+        <Button>
+          Apply for SAT
+          <SpanLogo className="Spanned">
+            <Imagehov src={require("../../assets/right-side.svg").default} />
+          </SpanLogo>
+        </Button>
       </Wrapper>
     </Mainsection>
   );
 }
+const Para = styled.p`
+  margin-top: 20px;
+  position: relative;
+  ::before {
+    content: url(${Test});
+    position: absolute;
+    top: -16px;
+    color: rgb(45, 45, 45);
+    width: 10px;
+    display: block;
+  }
+`;
+const SpanLogo = styled.span`
+  margin-left: 5px;
+`;
+const Imagehov = styled.img``;
 const DivMainer = styled.div`
   display: flex !important;
 `;
