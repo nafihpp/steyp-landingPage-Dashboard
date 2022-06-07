@@ -49,6 +49,25 @@ function Foot() {
                 <Button>+91-8589998874</Button>
                 <Button>hello@steyp.com</Button>
               </DivButtons>
+              <Spanner>
+                <Buttons>
+                  <ImgSocial
+                    src={require("../../assets/instagram.svg").default}
+                  />
+                </Buttons>
+              </Spanner>
+              <Buttons>
+                <ImgSocial src={require("../../assets/facebook.svg").default} />
+              </Buttons>
+              <Buttons>
+                <ImgSocial src={require("../../assets/twitter.svg").default} />
+              </Buttons>
+              <Buttons>
+                <ImgSocial src={require("../../assets/linkedin.svg").default} />
+              </Buttons>
+              <Buttons>
+                <ImgSocial src={require("../../assets/youtube.svg").default} />
+              </Buttons>
             </DivOne>
           </DivRight>
         </MainDiv>
@@ -69,6 +88,12 @@ function Foot() {
     </Mainsection>
   );
 }
+const Spanner = styled.span``;
+const ImgSocial = styled.img``;
+const Buttons = styled.a`
+  margin-right: 15px;
+  cursor: pointer;
+`;
 const ButtonOne = styled.a`
   margin-right: 10px;
   cursor: pointer;
@@ -108,7 +133,8 @@ const Button = styled.a`
   color: rgb(170, 170, 170);
   font-size: 15px;
   font-family: "gorditamedium";
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
 `;
 const DivLeft = styled.div``;
 const DivRight = styled.div`

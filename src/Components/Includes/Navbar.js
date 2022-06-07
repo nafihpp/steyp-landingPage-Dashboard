@@ -44,6 +44,7 @@ const MainList = styled.div`
 const Childone = styled.div``;
 const HeadDiv = styled.div`
   width: 35%;
+  cursor: pointer;
 `;
 const LogoImg = styled.img`
   display: block;
@@ -73,6 +74,7 @@ const HamburgImg = styled.img`
 const DivHamburg = styled.div`
   width: 18%;
   margin-left: 10px;
+  cursor: pointer;
 `;
 
 export default Navbar;

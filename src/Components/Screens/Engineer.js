@@ -42,6 +42,7 @@ function Engineer() {
 }
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Imagehov = styled.img``;
 const GreenSpan = styled.span`
@@ -96,6 +97,9 @@ const Button = styled.a`
   justify-content: center;
   border-radius: 5px;
   transition: all 0.4s ease 0s;
+  &:hover .Spanned {
+    display: block;
+  }
 `;
 const DivRight = styled.div`
   width: 50%;

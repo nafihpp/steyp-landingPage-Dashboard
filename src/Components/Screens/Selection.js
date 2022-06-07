@@ -64,6 +64,7 @@ function Selection() {
 }
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Imagehov = styled.img``;
 const Greenspan = styled.span`
@@ -113,6 +114,9 @@ const Button = styled.a`
   align-items: start;
   border-radius: 5px;
   justify-content: center;
+  &:hover .Spanned {
+    display: block;
+  }
 `;
 const DivRight = styled.div`
   width: 60%;

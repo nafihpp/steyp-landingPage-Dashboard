@@ -11,18 +11,13 @@ import Applys from "./Screens/Applys";
 import Helmet from "react-helmet";
 import Testimonial from "./Screens/Testimonial";
 import Foot from "./Includes/Foot";
-import Favicon from "../assets/index.png"
+import Favicon from "../assets/index.png";
 function Mainpage() {
   return (
     <>
       <Helmet>
         <title>Steyp | An Edtech company for Students</title>
-        <link
-          rel="icon"
-          type="image/png"
-          href={Favicon}
-          sizes="16x16"
-        />
+        <link rel="icon" type="image/png" href={Favicon} sizes="16x16" />
       </Helmet>
       <Navbar />
       <Spotlight />

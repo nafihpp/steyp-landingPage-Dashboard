@@ -31,9 +31,11 @@ function Sat() {
 const DivButton = styled.div`
   display: flex;
   justify-content: center;
+  cursor: pointer;
 `;
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Imagehov = styled.img``;
 const Button = styled.a`
@@ -53,6 +55,9 @@ const Button = styled.a`
   border-radius: 5px;
   width: 200px;
   justify-content: center;
+  &:hover .Spanned {
+    display: block;
+  }
 `;
 const MainSection = styled.section`
   padding-top: 100px;

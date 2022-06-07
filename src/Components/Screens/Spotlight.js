@@ -82,11 +82,13 @@ const ButtonDiv = styled.div`
   font-size: 16px;
   color: rgb(255, 255, 255);
   display: flex;
-  align-items: end;
+  align-items: start;
   justify-content: center;
   border-radius: 5px;
   &:hover .Spanned {
     display: block;
+    width: 20%;
+    transition: width 10s;
   }
 `;
 const SpanLogo = styled.span`

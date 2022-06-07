@@ -78,6 +78,7 @@ function Eligiblity() {
 }
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Imagehov = styled.img``;
 const Greenspan = styled.span`
@@ -130,6 +131,9 @@ const Button = styled.a`
   border-radius: 5px;
   justify-content: center;
   margin-left: 67px;
+  &:hover .Spanned {
+    display: block;
+  }
 `;
 const Par = styled.p``;
 const Head = styled.h3`

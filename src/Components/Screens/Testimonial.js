@@ -190,13 +190,16 @@ const Para = styled.p`
 `;
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Imagehov = styled.img``;
 const DivMainer = styled.div`
   display: flex !important;
 `;
 const ButtonLinkedin = styled.a``;
-const DivButton = styled.div``;
+const DivButton = styled.div`
+  cursor: pointer;
+`;
 const DivContents = styled.div``;
 const H3 = styled.h3``;
 const P = styled.p``;
@@ -260,5 +263,8 @@ const Button = styled.a`
   align-items: start;
   border-radius: 5px;
   transition: all 0.4s ease 0s;
+  &:hover .Spanned {
+    display: block;
+  }
 `;
 export default Testimonial;

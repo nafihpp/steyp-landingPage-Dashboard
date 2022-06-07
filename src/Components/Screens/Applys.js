@@ -24,6 +24,7 @@ function Applys() {
 }
 const Spanned = styled.span`
   margin-left: 8px;
+  display: none;
 `;
 const Spann = styled.span`
   position: relative;
@@ -57,6 +58,9 @@ const Button = styled.a`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
+  &:hover .spanned {
+    display: block;
+  }
 `;
 const MainSection = styled.section`
   padding-top: 100px;
