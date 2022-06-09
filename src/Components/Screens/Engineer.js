@@ -42,7 +42,8 @@ function Engineer() {
 }
 const SpanLogo = styled.span`
   margin-left: 8px;
-  display: none;
+  display: block;
+  visibility: hidden;
 `;
 const Imagehov = styled.img``;
 const GreenSpan = styled.span`
@@ -117,7 +118,7 @@ const Button = styled(Link)`
   border-radius: 5px;
   transition: 0.1s;
   &:hover .Spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
     width: 200px;

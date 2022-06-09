@@ -66,15 +66,21 @@ const DashboardLink = styled(Link)`
   align-items: center;
   justify-content: center;
   width: 200px;
+  @media all and (max-width: 768px) {
+    display: none;
+  }
 `;
 const HamburgImg = styled.img`
   display: block;
   width: 100%;
 `;
 const DivHamburg = styled(Link)`
-  width: 18%;
+  width: 19%;
   margin-left: 10px;
   cursor: pointer;
+  @media all and (max-width: 768px) {
+    width: 88%;
+  }
 `;
 
 export default Navbar;
