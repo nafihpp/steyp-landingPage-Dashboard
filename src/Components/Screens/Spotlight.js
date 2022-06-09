@@ -134,6 +134,8 @@ const Imagehov = styled.img`
 const DivRight = styled.div`
   @media all and (max-width: 768px) {
     position: absolute;
+    left: 132px;
+    top: 243px;
   }
   @media all and (max-width: 640px) {
     top: 302px;

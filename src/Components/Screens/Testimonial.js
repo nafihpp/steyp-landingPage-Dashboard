@@ -189,7 +189,6 @@ const ImgContainer = styled.div`
 `;
 const Sliders = styled(Slider)`
   display: flex !important;
-  width: 100% !important;
   justify-content: space-between !important;
 `;
 const Div = styled.div`
