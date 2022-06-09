@@ -122,11 +122,17 @@ const Button = styled.a`
   border-radius: 5px;
   justify-content: center;
   transition: 0.1s;
+  @media all and (max-width: 768px) {
+    width: 150px;
+  }
   &:hover .Spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
     width: 200px;
+    @media all and (max-width: 768px) {
+      width: 165px;
+    }
   }
 `;
 const DivRight = styled.div`

@@ -46,7 +46,7 @@ const HeadDiv = styled.div`
   width: 35%;
   cursor: pointer;
   @media all and (max-width: 768px) {
-    width: 40%;
+    width: 42%;
   }
 `;
 const LogoImg = styled.img`
@@ -82,7 +82,7 @@ const DivHamburg = styled(Link)`
   margin-left: 10px;
   cursor: pointer;
   @media all and (max-width: 768px) {
-    width: 26%;
+    width: 23%;
   }
 `;
 

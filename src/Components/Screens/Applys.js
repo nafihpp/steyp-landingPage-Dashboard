@@ -24,7 +24,7 @@ function Applys() {
 }
 const Spanned = styled.span`
   margin-left: 8px;
-  display: none;
+  visibility: hidden;
 `;
 const Spann = styled.span`
   position: relative;
@@ -65,10 +65,9 @@ const Button = styled.a`
   border-radius: 5px;
   transition: 0.1s;
   &:hover .spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
-    padding-right: 50px;
     width: 200px;
   }
 `;
