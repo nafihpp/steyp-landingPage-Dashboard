@@ -121,7 +121,7 @@ const Button = styled.a`
   align-items: start;
   border-radius: 5px;
   justify-content: center;
-  transition: 0.1s;
+  transition: 0.8s;
   @media all and (max-width: 768px) {
     width: 150px;
   }

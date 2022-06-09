@@ -58,7 +58,7 @@ const Button = styled(Link)`
   border-radius: 5px;
   width: 175px;
   justify-content: center;
-  transition: 0.1s;
+  transition: 0.8s;
   &:hover .Spanned {
     visibility: visible;
   }

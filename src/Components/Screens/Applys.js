@@ -63,7 +63,7 @@ const Button = styled.a`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
-  transition: 0.1s;
+  transition: 0.8s;
   &:hover .spanned {
     visibility: visible;
   }

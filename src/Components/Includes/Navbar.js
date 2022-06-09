@@ -46,7 +46,7 @@ const HeadDiv = styled.div`
   width: 35%;
   cursor: pointer;
   @media all and (max-width: 768px) {
-    width: 42%;
+    width: 50%;
   }
 `;
 const LogoImg = styled.img`

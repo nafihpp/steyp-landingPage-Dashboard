@@ -164,7 +164,7 @@ const Para = styled.p`
 `;
 const SpanLogo = styled.span`
   margin-left: 8px;
-  display: none;
+  visibility: hidden;
 `;
 const Imagehov = styled.img``;
 const DivMainer = styled.div`
@@ -238,9 +238,9 @@ const Button = styled.a`
   justify-content: center;
   align-items: start;
   border-radius: 5px;
-  transition: 0.1s;
+  transition: 0.8s;
   &:hover .Spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
     width: 200px;
