@@ -160,7 +160,7 @@ const ImageContainer = styled.div`
     width: 50%;
   }
   @media all and (max-width: 680px) {
-    width: 32%;
+    width: 87%;
   }
 `;
 const Img = styled.img`
