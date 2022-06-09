@@ -79,7 +79,7 @@ const DivHamburg = styled(Link)`
   margin-left: 10px;
   cursor: pointer;
   @media all and (max-width: 768px) {
-    width: 80%;
+    width: 26%;
   }
 `;
 
