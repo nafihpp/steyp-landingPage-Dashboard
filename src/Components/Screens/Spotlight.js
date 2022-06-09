@@ -102,7 +102,7 @@ const ButtonDiv = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   padding: 12px 14px;
-  width: 175px;
+  width: 150px;
   background: linear-gradient(
       100deg,
       rgb(15, 167, 111) 0%,
@@ -120,7 +120,7 @@ const ButtonDiv = styled(Link)`
     display: block;
   }
   &:hover {
-    width: 200px;
+    width: 165px;
   }
 `;
 const SpanLogo = styled.span`
