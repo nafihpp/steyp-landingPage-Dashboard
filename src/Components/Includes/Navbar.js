@@ -67,7 +67,7 @@ const DashboardLink = styled(Link)`
   justify-content: center;
   width: 200px;
   @media all and (max-width: 768px) {
-    display: none;
+   visibility: hidden;
   }
 `;
 const HamburgImg = styled.img`
@@ -79,7 +79,7 @@ const DivHamburg = styled(Link)`
   margin-left: 10px;
   cursor: pointer;
   @media all and (max-width: 768px) {
-    width: 88%;
+    width: 80%;
   }
 `;
 
