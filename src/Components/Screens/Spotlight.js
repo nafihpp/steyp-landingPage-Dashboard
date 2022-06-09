@@ -60,9 +60,6 @@ const MainSection = styled.section`
   @media all and (max-width: 640px) {
     //481
   }
-  @media all and (max-width: 480px) {
-    //361
-  }
   @media all and (max-width: 360px) {
     //321
   }
@@ -139,6 +136,10 @@ const DivRight = styled.div`
   }
   @media all and (max-width: 640px) {
     top: 302px;
+  }
+  @media all and (max-width: 480px) {
+    top: 357px;
+    //361
   }
 `;
 const DivMammo = styled.div`
