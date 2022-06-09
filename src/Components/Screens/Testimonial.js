@@ -164,6 +164,7 @@ const Para = styled.p`
 `;
 const SpanLogo = styled.span`
   margin-left: 8px;
+  display: block;
   visibility: hidden;
 `;
 const Imagehov = styled.img``;
@@ -223,7 +224,7 @@ const Headline = styled.h1`
 const Button = styled.a`
   margin: 35px auto 0px;
   cursor: pointer;
-  width: 175px;
+  width: 160px;
   padding: 15px 14px;
   background: linear-gradient(
       100deg,
@@ -243,7 +244,7 @@ const Button = styled.a`
     visibility: visible;
   }
   &:hover {
-    width: 200px;
+    width: 175px;
   }
 `;
 export default Testimonial;

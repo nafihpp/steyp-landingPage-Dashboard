@@ -24,6 +24,7 @@ function Applys() {
 }
 const Spanned = styled.span`
   margin-left: 8px;
+  display: block;
   visibility: hidden;
 `;
 const Spann = styled.span`
