@@ -64,6 +64,9 @@ const Span = styled.span`
   width: 5%;
   display: inline-block;
   margin-right: 20px;
+  @media all and (max-width: 980px) {
+    width: 10%;
+  }
 `;
 const SectionMain = styled.section`
   background: rgb(249, 249, 249);
@@ -75,9 +78,18 @@ const DivWrap = styled.div`
 `;
 const DivMain = styled.div`
   display: flex;
+  @media all and (max-width: 980px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 36px;
+  }
 `;
 const DivLeft = styled.div`
   width: 50%;
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const Img = styled.img`
   display: block;

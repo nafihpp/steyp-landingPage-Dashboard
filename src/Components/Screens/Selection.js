@@ -81,9 +81,16 @@ const Sectionwrap = styled.div`
 const DivMain = styled.div`
   display: flex;
   justify-content: space-between;
+  @media all and (max-width: 980px) {
+    flex-wrap: wrap;
+  }
 `;
 const DivLeft = styled.div`
   width: 30%;
+  @media all and (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 const H1 = styled.h1`
   font-size: 35px;
@@ -114,7 +121,7 @@ const Button = styled.a`
   align-items: start;
   border-radius: 5px;
   justify-content: center;
-  transition: 0.10s;
+  transition: 0.1s;
   &:hover .Spanned {
     display: block;
   }
@@ -124,6 +131,10 @@ const Button = styled.a`
 `;
 const DivRight = styled.div`
   width: 60%;
+  @media all and (max-width: 768px) {
+    width: 100%;
+    margin-top: 15px;
+  }
 `;
 const DivOne = styled.div`
   padding: 30px 25px;
@@ -144,7 +155,14 @@ const DivTwo = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+  @media all and (max-width: 768px) {
+    width: 50%;
+  }
+  @media all and (max-width: 680px) {
+    width: 32%;
+  }
+`;
 const Img = styled.img`
   display: block;
   width: 100%;

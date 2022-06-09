@@ -38,6 +38,11 @@ const Spann = styled.span`
     right: -24px;
     left: -9px;
     top: 41px;
+    @media all and (max-width: 768px) {
+      width: 73px;
+      left: -5px;
+      top: 24px;
+    }
   }
 `;
 const ImgSpan = styled.img``;
@@ -58,11 +63,12 @@ const Button = styled.a`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
-  transition: 0.10s;
+  transition: 0.1s;
   &:hover .spanned {
     display: block;
   }
   &:hover {
+    padding-right: 50px;
     width: 200px;
   }
 `;
@@ -83,6 +89,12 @@ const MainDiv = styled.div`
   flex-direction: column;
   position: relative;
   padding: 98px 0;
+  @media all and (max-width: 980px) {
+    background-position-x: 176px;
+  }
+  @media all and (max-width: 480px) {
+    background-position-y: -4px;
+  }
 `;
 const Headline = styled.h1`
   margin-bottom: 18px;
@@ -91,6 +103,9 @@ const Headline = styled.h1`
   color: rgb(255, 255, 255);
   font-weight: 100;
   text-align: center;
+  @media all and (max-width: 768px) {
+    font-size: 19px;
+  }
 `;
 const Span = styled.span`
   color: rgb(78, 175, 124);

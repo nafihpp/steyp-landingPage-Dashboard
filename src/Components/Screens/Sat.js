@@ -30,13 +30,14 @@ function Sat() {
   );
 }
 const DivButton = styled.div`
-  display: flex;
-  justify-content: center;
+  width: 175px;
+  margin: 0 auto;
   cursor: pointer;
 `;
 const SpanLogo = styled.span`
   margin-left: 8px;
-  display: none;
+  display: block;
+  visibility: hidden;
 `;
 const Imagehov = styled.img``;
 const Button = styled(Link)`
@@ -59,7 +60,7 @@ const Button = styled(Link)`
   justify-content: center;
   transition: 0.1s;
   &:hover .Spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
     width: 200px;
@@ -67,6 +68,9 @@ const Button = styled(Link)`
 `;
 const MainSection = styled.section`
   padding-top: 100px;
+  @media all and (max-width: 980px) {
+    padding-top: 13px;
+  }
 `;
 const Wrapper = styled.div`
   width: 90%;
@@ -79,10 +83,19 @@ const MainDiv = styled.div`
   flex-direction: column;
   position: relative;
   padding: 98px 0;
+  @media all and (max-width: 980px) {
+    background-position-x: 176px;
+  }
+  @media all and (max-width: 480px) {
+    background-position-y: -4px;
+  }
 `;
 const Headline = styled.h1`
   margin-bottom: 18px;
   text-align: center;
+  @media all and (max-width: 480px) {
+    font-size: 19px;
+  }
 `;
 const Para = styled.p`
   margin-bottom: 23px;

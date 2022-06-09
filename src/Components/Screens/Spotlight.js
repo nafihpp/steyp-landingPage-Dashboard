@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 function Spotlight() {
   return (
     <MainSection>
@@ -42,6 +42,30 @@ function Spotlight() {
 const MainSection = styled.section`
   background: rgb(241, 250, 255);
   padding: 100px 0;
+  @media all and (max-width: 1380px) {
+    //1281
+  }
+  @media all and (max-width: 1280px) {
+    //1051
+  }
+  @media all and (max-width: 1080px) {
+    //981
+  }
+  @media all and (max-width: 980px) {
+    //769
+  }
+  @media all and (max-width: 768px) {
+    //641
+  }
+  @media all and (max-width: 640px) {
+    //481
+  }
+  @media all and (max-width: 480px) {
+    //361
+  }
+  @media all and (max-width: 360px) {
+    //321
+  }
 `;
 const Wrapper = styled.section`
   width: 90%;
@@ -56,11 +80,17 @@ const DivLeft = styled.div`
 `;
 const Headline = styled.h1`
   font-size: 44px;
-  font-family: "gorditamedium";
   color: rgb(33, 33, 33);
   margin-bottom: 36px;
   font-weight: 400;
   font-family: "gorditamedium";
+  @media all and (max-width: 980px) {
+    font-size: 39px;
+    //769
+  }
+  @media (max-width: 480px) {
+    font-size: 27px;
+  }
 `;
 const Paragraph = styled.p`
   margin-bottom: 36px;
@@ -85,7 +115,7 @@ const ButtonDiv = styled(Link)`
   align-items: start;
   justify-content: center;
   border-radius: 5px;
-  transition: 0.10s;
+  transition: 0.8s;
   &:hover .Spanned {
     display: block;
   }
@@ -101,7 +131,14 @@ const Imagehov = styled.img`
   width: 100%;
   display: block;
 `;
-const DivRight = styled.div``;
+const DivRight = styled.div`
+  @media all and (max-width: 768px) {
+    position: absolute;
+  }
+  @media all and (max-width: 640px) {
+    top: 302px;
+  }
+`;
 const DivMammo = styled.div`
   position: absolute;
   width: 44%;

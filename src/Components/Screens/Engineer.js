@@ -58,9 +58,15 @@ const Wrap = styled.div`
 const DivMain = styled.div`
   display: flex;
   justify-content: space-between;
+  @media all and (max-width: 980px) {
+    flex-wrap: wrap;
+  }
 `;
 const DivLeft = styled.div`
-  width: 40%;
+  width: 100%;
+  @media all and (max-width: 980px) {
+    text-align: center;
+  }
 `;
 const Headline = styled.h1`
   margin-bottom: 10px;
@@ -69,14 +75,27 @@ const Headline = styled.h1`
   position: relative;
   font-size: 51px;
   font-weight: 100;
+  @media all and (max-width: 980px) {
+    font-size: 36px;
+    text-align: left;
+  }
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
 `;
 const Paraone = styled.p`
   margin-bottom: 10px;
   color: #545454;
+  @media all and (max-width: 980px) {
+    text-align: left;
+  }
 `;
 const Paratwo = styled.p`
   margin-bottom: 20px;
   color: #545454;
+  @media all and (max-width: 980px) {
+    text-align: left;
+  }
 `;
 const Button = styled(Link)`
   text-decoration: none;
@@ -106,6 +125,10 @@ const Button = styled(Link)`
 `;
 const DivRight = styled.div`
   width: 50%;
+  @media all and (max-width: 980px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 const RightImg = styled.img`
   display: block;

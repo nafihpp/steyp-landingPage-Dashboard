@@ -55,19 +55,27 @@ function Foot() {
                     src={require("../../assets/instagram.svg").default}
                   />
                 </Buttons>
+                <Buttons>
+                  <ImgSocial
+                    src={require("../../assets/facebook.svg").default}
+                  />
+                </Buttons>
+                <Buttons>
+                  <ImgSocial
+                    src={require("../../assets/twitter.svg").default}
+                  />
+                </Buttons>
+                <Buttons>
+                  <ImgSocial
+                    src={require("../../assets/linkedin.svg").default}
+                  />
+                </Buttons>
+                <Buttons>
+                  <ImgSocial
+                    src={require("../../assets/youtube.svg").default}
+                  />
+                </Buttons>
               </Spanner>
-              <Buttons>
-                <ImgSocial src={require("../../assets/facebook.svg").default} />
-              </Buttons>
-              <Buttons>
-                <ImgSocial src={require("../../assets/twitter.svg").default} />
-              </Buttons>
-              <Buttons>
-                <ImgSocial src={require("../../assets/linkedin.svg").default} />
-              </Buttons>
-              <Buttons>
-                <ImgSocial src={require("../../assets/youtube.svg").default} />
-              </Buttons>
             </DivOne>
           </DivRight>
         </MainDiv>
@@ -139,6 +147,9 @@ const Button = styled.a`
 const DivLeft = styled.div``;
 const DivRight = styled.div`
   display: flex;
+  @media all and (max-width: 980px) {
+    flex-wrap: wrap;
+  }
 `;
 const P = styled.p`
   color: rgb(170, 170, 170);
@@ -155,6 +166,30 @@ const Wrapper = styled.div`
 const MainDiv = styled.div`
   display: flex;
   justify-content: space-between;
+  @media all and (max-width: 1380px) {
+    //1281
+  }
+  @media all and (max-width: 1280px) {
+    //1051
+  }
+  @media all and (max-width: 1080px) {
+    //981
+  }
+  @media all and (max-width: 980px) {
+    flex-wrap: wrap;
+  }
+  @media all and (max-width: 768px) {
+    //641
+  }
+  @media all and (max-width: 640px) {
+    //481
+  }
+  @media all and (max-width: 480px) {
+    //361
+  }
+  @media all and (max-width: 360px) {
+    //321
+  }
 `;
 const DivLogo = styled.div`
   width: 40%;

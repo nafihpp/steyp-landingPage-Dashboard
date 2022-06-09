@@ -78,7 +78,8 @@ function Eligiblity() {
 }
 const SpanLogo = styled.span`
   margin-left: 8px;
-  display: none;
+  display: block;
+  visibility: hidden;
 `;
 const Imagehov = styled.img``;
 const Greenspan = styled.span`
@@ -90,6 +91,9 @@ const Headline = styled.h1`
   font-family: "gorditamedium";
   font-size: 34px;
   font-weight: 400;
+  @media all and (max-width: 640px) {
+    font-size: 24px;
+  }
 `;
 const DivContent = styled.div``;
 const MainSection = styled.section`
@@ -102,12 +106,20 @@ const SectionWrap = styled.div`
 const MainDiv = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 const DivLeft = styled.div`
   width: 45%;
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const DivRight = styled.div`
   width: 45%;
+  @media all and (max-width: 768px) {
+    width: 90%;
+    margin: 30px auto;
+  }
 `;
 const Image = styled.img`
   display: block;
@@ -131,9 +143,9 @@ const Button = styled.a`
   border-radius: 5px;
   justify-content: center;
   margin-left: 67px;
-  transition: 0.10s;
+  transition: 0.1s;
   &:hover .Spanned {
-    display: block;
+    visibility: visible;
   }
   &:hover {
     width: 200px;
@@ -144,6 +156,9 @@ const Head = styled.h3`
   font-family: "gorditamedium";
   font-size: 22px;
   margin-bottom: 15px;
+  @media all and (max-width: 640px) {
+    font-size: 17px;
+  }
 `;
 const Img = styled.img``;
 const SpanImage = styled.span`
@@ -152,5 +167,8 @@ const SpanImage = styled.span`
 const Div = styled.div`
   display: flex;
   margin-bottom: 40px;
+  @media all and (max-width: 640px) {
+    width: 100% !important;
+  }
 `;
 export default Eligiblity;

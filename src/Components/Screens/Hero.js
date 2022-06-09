@@ -7,9 +7,8 @@ function Hero() {
       <MainSection>
         <DivLeft>
           <H2>
-            <Span>Steyp</Span> is Introducing a{" "}
-            <WriteDiv>learning system</WriteDiv> to create
-            <br />
+            <Span>Steyp</Span> is Introducing a <br />{" "}
+            <WriteDiv>learning system</WriteDiv> to create <br />
             <Span>
               <Typeds
                 strings={["Tech Scientist", "Computer Engineer"]}
@@ -40,6 +39,28 @@ const WriteDiv = styled.span`
     background: rgb(74, 237, 194);
     display: block;
     z-index: -1;
+    @media all and (max-width: 1380px) {
+      //1281
+    }
+    @media all and (max-width: 1280px) {
+      //1051
+    }
+    @media all and (max-width: 1080px) {
+      //981
+    }
+    @media all and (max-width: 980px) {
+    }
+    @media all and (max-width: 768px) {
+      display: none;
+    }
+    @media all and (max-width: 640px) {
+    }
+    @media all and (max-width: 480px) {
+      //361
+    }
+    @media all and (max-width: 360px) {
+      //321
+    }
   }
 `;
 const Typeds = styled(Typed)``;
@@ -51,8 +72,16 @@ const MainSection = styled.section`
   display: flex;
   padding-top: 100px;
   justify-content: space-between;
+  @media all and (max-width: 980px) {
+    padding-top: 29px;
+  }
 `;
-const DivLeft = styled.div``;
+const DivLeft = styled.div`
+  width: 50%;
+  @media all and (max-width: 768px) {
+    width: 55%;
+  }
+`;
 const H2 = styled.h2`
   text-align: left;
   width: 100%;
@@ -60,11 +89,22 @@ const H2 = styled.h2`
   position: relative;
   font-size: 52px;
   font-weight: 100;
+  @media all and (max-width: 768px) {
+    font-size: 17px;
+  }
+  @media all and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 const Span = styled.span`
   color: rgb(87, 194, 137);
 `;
-const DivRight = styled.div``;
+const DivRight = styled.div`
+  width: 45%;
+`;
 const DivImgRi = styled.div``;
-const ImgRight = styled.img``;
+const ImgRight = styled.img`
+  display: block;
+  width: 100%;
+`;
 export default Hero;

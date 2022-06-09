@@ -13,32 +13,6 @@ function Testimonial() {
     rows: 2,
     slidesPerRow: 2,
     variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
   };
   return (
     <Mainsection>
@@ -225,6 +199,9 @@ const Div = styled.div`
   margin-bottom: 20px;
   width: 48% !important;
   margin: 0 10px 10px 0;
+  @media all and (max-width: 768px) {
+    width: 100% !important;
+  }
 `;
 const GreenSpan = styled.span`
   color: rgb(15, 167, 111);
@@ -262,7 +239,7 @@ const Button = styled.a`
   justify-content: center;
   align-items: start;
   border-radius: 5px;
-  transition: 0.10s;
+  transition: 0.1s;
   &:hover .Spanned {
     display: block;
   }
