@@ -1,23 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <NavbarMain>
       <Wrapper>
-        <MainList>
-          <Childone>
-            <HeadDiv>
-              <LogoImg src={require("../../assets/steyp-logo.svg").default} />
-            </HeadDiv>
-          </Childone>
-          <Childtwo>
-            <DashboardLink to="/">Go to dashboard</DashboardLink>
-            <DivHamburg to="/">
-              <HamburgImg src={require("../../assets/hamburg.svg").default} />
-            </DivHamburg>
-          </Childtwo>
-        </MainList>
+          <MainList>
+            <Childone>
+              <HeadDiv>
+                <LogoImg src={require("../../assets/steyp-logo.svg").default} />
+              </HeadDiv>
+            </Childone>
+            <Childtwo>
+              <DashboardLink to="/">Go to dashboard</DashboardLink>
+              <DivHamburg to="/">
+                <HamburgImg src={require("../../assets/hamburg.svg").default} />
+              </DivHamburg>
+            </Childtwo>
+          </MainList>
       </Wrapper>
     </NavbarMain>
   );
@@ -70,7 +70,7 @@ const DashboardLink = styled(Link)`
   justify-content: center;
   width: 200px;
   @media all and (max-width: 768px) {
-   visibility: hidden;
+    visibility: hidden;
   }
 `;
 const HamburgImg = styled.img`

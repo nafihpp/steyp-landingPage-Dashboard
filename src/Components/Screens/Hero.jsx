@@ -1,30 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import Typed from "react-typed";
+import Fade from "react-reveal/Fade";
 function Hero() {
   return (
     <Wrapper>
-      <MainSection>
-        <DivLeft>
-          <H2>
-            <Span>Steyp</Span> is Introducing a <br />{" "}
-            <WriteDiv>learning system</WriteDiv> to create <br />
-            <Span>
-              <Typeds
-                strings={["Tech Scientist", "Computer Engineer"]}
-                typeSpeed={70}
-                backSpeed={60}
-                loop
-              />
-            </Span>
-          </H2>
-        </DivLeft>
-        <DivRight>
-          <DivImgRi>
-            <ImgRight src={require("../../assets/introduction-logo.png")} />
-          </DivImgRi>
-        </DivRight>
-      </MainSection>
+      <Fade bottom>
+        <MainSection>
+          <DivLeft>
+            <H2>
+              <Span>Steyp</Span> is Introducing a <br />{" "}
+              <WriteDiv>learning system</WriteDiv> to create <br />
+              <Span>
+                <Typeds
+                  strings={["Tech Scientist", "Computer Engineer"]}
+                  typeSpeed={70}
+                  backSpeed={60}
+                  loop
+                />
+              </Span>
+            </H2>
+          </DivLeft>
+          <DivRight>
+            <DivImgRi>
+              <ImgRight src={require("../../assets/introduction-logo.png")} />
+            </DivImgRi>
+          </DivRight>
+        </MainSection>
+      </Fade>
     </Wrapper>
   );
 }
