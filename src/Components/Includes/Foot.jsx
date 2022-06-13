@@ -8,7 +8,10 @@ function Foot() {
         <MainDiv>
           <DivLeft>
             <DivLogo>
-              <Img src={require("../../assets/grey-logo.svg").default} />
+              <Img
+                src={require("../../assets/grey-logo.svg").default}
+                alt="grey-logo"
+              />
             </DivLogo>
             <P>
               Steyp Private Limited, <br /> 37/1959, 1st Floor, Infra Futura,
@@ -53,26 +56,31 @@ function Foot() {
                 <Buttons>
                   <ImgSocial
                     src={require("../../assets/instagram.svg").default}
+                    alt="Instagram"
                   />
                 </Buttons>
                 <Buttons>
                   <ImgSocial
                     src={require("../../assets/facebook.svg").default}
+                    alt="facebook"
                   />
                 </Buttons>
                 <Buttons>
                   <ImgSocial
                     src={require("../../assets/twitter.svg").default}
+                    alt="twitter"
                   />
                 </Buttons>
                 <Buttons>
                   <ImgSocial
                     src={require("../../assets/linkedin.svg").default}
+                    alt="linkedin"
                   />
                 </Buttons>
                 <Buttons>
                   <ImgSocial
                     src={require("../../assets/youtube.svg").default}
+                    alt="youtube"
                   />
                 </Buttons>
               </Spanner>

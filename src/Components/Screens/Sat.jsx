@@ -19,7 +19,7 @@ function Sat() {
               Apply for SAT{" "}
               <SpanLogo className="Spanned">
                 <Imagehov
-                  src={require("../../assets/right-side.svg").default}
+                  src={require("../../assets/right-side.svg").default} alt="Arrow"
                 />
               </SpanLogo>
             </Button>
