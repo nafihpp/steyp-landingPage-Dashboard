@@ -3,6 +3,7 @@ import Sidebar from "./Includes/Sidebar";
 import Helmet from "react-helmet";
 import Favicon from "../assets/index.png";
 import Header from "./Includes/Header";
+import Middle from "./Screens/Middle";
 function Dashboard() {
   return (
     <>
@@ -11,6 +12,7 @@ function Dashboard() {
         <link rel="icon" type="image/png" href={Favicon} sizes="16x16" />
       </Helmet>
       <Header />
+      <Middle />
       <Sidebar />
     </>
   );

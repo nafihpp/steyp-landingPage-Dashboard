@@ -109,6 +109,8 @@ const ImgSocial = styled.img``;
 const Buttons = styled.a`
   margin-right: 15px;
   cursor: pointer;
+  width: 20px;
+  display: inline-block;
 `;
 const ButtonOne = styled.a`
   margin-right: 10px;

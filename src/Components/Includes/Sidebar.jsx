@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Dashboard from "../../assets/dashboard.svg";
 import FreeGround from "../../assets/free.svg";
@@ -7,12 +7,19 @@ import Chat from "../../assets/talk.svg";
 import { Link } from "react-router-dom";
 
 function SideBar() {
+  const [count, setCount] = useState(0);
   return (
     <>
       <Container>
         <SideButtons>
           <TopSide>
-            <Button to="/dashboard">
+            <Button
+              to="/dashboard"
+              onClick={() => {
+                setCount(1);
+              }}
+            >
+              <Spanned className={count === 1 ? "dash" : ""}></Spanned>
               <Menu>
                 <ImageContainer>
                   <MenuItemIcon src={Dashboard} alt="Icon" />
@@ -22,7 +29,13 @@ function SideBar() {
             </Button>
           </TopSide>
           <MiddleSide>
-            <Button to="/">
+            <Button
+              to="/dashboard"
+              onClick={() => {
+                setCount(2);
+              }}
+            >
+              <Spanned className={count === 2 ? "dash" : ""}></Spanned>
               <Menu>
                 <ImageContainer>
                   <MenuItemIcon src={FreeGround} alt="Icon" />
@@ -30,7 +43,13 @@ function SideBar() {
                 <Title>Free Ground</Title>
               </Menu>
             </Button>
-            <Button to="/">
+            <Button
+              to="/dashboard"
+              onClick={() => {
+                setCount(3);
+              }}
+            >
+              <Spanned className={count === 3 ? "dash" : ""}></Spanned>{" "}
               <Menu>
                 <ImageContainer>
                   <MenuItemIcon src={Challenges} alt="Icon" />
@@ -38,7 +57,13 @@ function SideBar() {
                 <Title>Challenges</Title>
               </Menu>
             </Button>
-            <Button to="/">
+            <Button
+              to="/dashboard"
+              onClick={() => {
+                setCount(4);
+              }}
+            >
+              <Spanned className={count === 4 ? "dash" : ""}></Spanned>{" "}
               <Menu>
                 <ImageContainer>
                   <MenuItemIcon src={Chat} alt="Icon" />
@@ -50,7 +75,7 @@ function SideBar() {
         </SideButtons>
         <Socialmediacontainer>
           <Socialitems>
-          <Icondiv>
+            <Icondiv>
               <Socialicon
                 src={require("../../assets/linkedindash.svg").default}
                 alt="linkedin"
@@ -86,6 +111,17 @@ function SideBar() {
     </>
   );
 }
+const Spanned = styled.span`
+  width: 5px;
+  height: 43px;
+  background: #56c081;
+  display: none;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  &.dash {
+    display: block;
+  }
+`;
 const ImageContainer = styled.div`
   width: 16px;
   margin-right: 20px;
