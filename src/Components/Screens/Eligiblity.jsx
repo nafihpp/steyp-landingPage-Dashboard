@@ -153,7 +153,9 @@ const Button = styled.a`
     width: 200px;
   }
 `;
-const Par = styled.p``;
+const Par = styled.p`
+  font-family: "gorditamedium";
+`;
 const Head = styled.h3`
   font-family: "gorditamedium";
   font-size: 22px;

@@ -93,6 +93,7 @@ const MainDiv = styled.div`
 const Headline = styled.h1`
   margin-bottom: 18px;
   text-align: center;
+  font-family: "gorditamedium";
   @media all and (max-width: 480px) {
     font-size: 19px;
   }
@@ -100,6 +101,7 @@ const Headline = styled.h1`
 const Para = styled.p`
   margin-bottom: 23px;
   text-align: center;
+  font-family: "gorditamedium";
 `;
 const Span = styled.span`
   color: rgb(78, 175, 124);

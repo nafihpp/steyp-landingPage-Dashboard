@@ -91,6 +91,7 @@ const Headline = styled.h1`
 `;
 const Paragraph = styled.p`
   margin-bottom: 36px;
+  font-family: "gorditamedium";
 `;
 const Greenspan = styled.span`
   color: #0fa76f;

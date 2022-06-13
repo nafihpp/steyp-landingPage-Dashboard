@@ -100,9 +100,11 @@ const H1 = styled.h1`
 `;
 const Paraone = styled.p`
   margin-bottom: 30px;
+  font-family: "gorditamedium";
 `;
 const Paratwo = styled.p`
   margin-bottom: 25px;
+  font-family: "gorditamedium";
 `;
 const Button = styled.a`
   cursor: pointer;

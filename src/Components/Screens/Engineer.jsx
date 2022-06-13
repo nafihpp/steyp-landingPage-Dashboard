@@ -87,6 +87,7 @@ const Headline = styled.h1`
 const Paraone = styled.p`
   margin-bottom: 10px;
   color: #545454;
+  font-family: "gorditamedium";
   @media all and (max-width: 980px) {
     text-align: left;
   }
@@ -94,6 +95,7 @@ const Paraone = styled.p`
 const Paratwo = styled.p`
   margin-bottom: 20px;
   color: #545454;
+  font-family: "gorditamedium";
   @media all and (max-width: 980px) {
     text-align: left;
   }

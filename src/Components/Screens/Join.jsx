@@ -106,5 +106,6 @@ const DivRight = styled.div`
 const Headline = styled.h1`
   margin-bottom: 20px;
   font-size: 34px;
+  font-family: "gorditamedium";
 `;
 export default Join;

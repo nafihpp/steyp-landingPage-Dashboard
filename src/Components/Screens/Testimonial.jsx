@@ -153,6 +153,7 @@ function Testimonial() {
 const Para = styled.p`
   margin-top: 20px;
   position: relative;
+  font-family: "gorditamedium";
   ::before {
     content: url(${Test});
     position: absolute;
