@@ -5,19 +5,19 @@ function Navbar() {
   return (
     <NavbarMain>
       <Wrapper>
-          <MainList>
-            <Childone>
-              <HeadDiv>
-                <LogoImg src={require("../../assets/steyp-logo.svg").default} />
-              </HeadDiv>
-            </Childone>
-            <Childtwo>
-              <DashboardLink to="/">Go to dashboard</DashboardLink>
-              <DivHamburg to="/">
-                <HamburgImg src={require("../../assets/hamburg.svg").default} />
-              </DivHamburg>
-            </Childtwo>
-          </MainList>
+        <MainList>
+          <Childone>
+            <HeadDiv>
+              <LogoImg src={require("../../assets/steyp-logo.svg").default} />
+            </HeadDiv>
+          </Childone>
+          <Childtwo>
+            <DashboardLink to="/dashboard">Go to dashboard</DashboardLink>
+            <DivHamburg to="/">
+              <HamburgImg src={require("../../assets/hamburg.svg").default} />
+            </DivHamburg>
+          </Childtwo>
+        </MainList>
       </Wrapper>
     </NavbarMain>
   );

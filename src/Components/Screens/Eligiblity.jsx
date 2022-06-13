@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Slide from "react-reveal/Slide"
+import Slide from "react-reveal/Slide";
 function Eligiblity() {
   return (
     <MainSection>

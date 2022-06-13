@@ -115,7 +115,7 @@ function Testimonial() {
             <DivMainer>
               <ImgContainer>
                 <Img
-                  src={require("../../assets/Muhammed_Saheerk_jtOOWA8.jpg")}
+                  src={require("../../assets/Muhammed_Saheerk_jtOOWA8.jpg")} alt=""
                 />
               </ImgContainer>
               <DivContents>

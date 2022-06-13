@@ -1,4 +1,6 @@
-import React from "react";
+import { React, lazy } from "react";
+import Helmet from "react-helmet";
+import Favicon from "../assets/index.png";
 import Navbar from "./Includes/Navbar";
 import Spotlight from "./Screens/Spotlight";
 import Hero from "./Screens/Hero";
@@ -8,10 +10,8 @@ import Join from "./Screens/Join";
 import Eligiblity from "./Screens/Eligiblity";
 import Selection from "./Screens/Selection";
 import Applys from "./Screens/Applys";
-import Helmet from "react-helmet";
-import Testimonial from "./Screens/Testimonial";
-import Foot from "./Includes/Foot";
-import Favicon from "../assets/index.png";
+const Testimonial = lazy(() => import("./Screens/Testimonial"));
+const Foot = lazy(() => import("./Includes/Foot"));
 function Mainpage() {
   return (
     <>

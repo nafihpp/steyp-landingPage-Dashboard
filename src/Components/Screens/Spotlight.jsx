@@ -60,9 +60,6 @@ const MainSection = styled.section`
   @media all and (max-width: 640px) {
     //481
   }
-  @media all and (max-width: 360px) {
-    //321
-  }
 `;
 const Wrapper = styled.section`
   width: 90%;
@@ -148,6 +145,9 @@ const DivMammo = styled.div`
   width: 44%;
   right: 86px;
   top: 120px;
+  @media all and (max-width: 480px) {
+    width: 48%;
+  }
 `;
 const MommoImg = styled.img`
   display: block;
