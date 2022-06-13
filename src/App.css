@@ -5,15 +5,19 @@
   font-weight: normal;
   font-style: normal;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body::-webkit-scrollbar {
-  display: none;  
+img {
+  display: block;
+  width: 100%;
 }
-.App{
+body::-webkit-scrollbar {
+  display: none;
+}
+.App {
   text-align: center;
 }
 .slick-dots li button {
