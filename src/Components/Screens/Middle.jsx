@@ -67,5 +67,8 @@ const TopContainer = styled.div`
     position: relative;
     top: 76px;
     width: 97%;
+    @media all and (max-width: 680px) {
+        left: 89px;
+    }
 `;
 export default Middle;
